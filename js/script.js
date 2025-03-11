@@ -2,7 +2,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     event.preventDefault();
 
     emailjs.init({
-        publickey:"IsBy3j5UW6dM9LSq4"
+        publickey:"lsBy3j5UW6dM9LSq4"
     });
 
     const formData = {
