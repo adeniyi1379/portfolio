@@ -11,11 +11,11 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         message: document.getElementById("message").value
     };
 
-    emailjs.send("service_mxwvlqz", "template_3tcwosk", this)
+    emailjs.send("service_mxwvlqz", "template_3tcwosk", formData)
         .then(response => {
             alert("Email sent successfully!");
         })
         .catch(error => {
-            alert("Failed to send email.");
+            alert("Failed to send email.", error);
         });
 });
