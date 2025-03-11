@@ -1,9 +1,7 @@
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    emailjs.init({
-        publickey:"lsBy3j5UW6dM9LSq4"
-    });
+    emailjs.init("lsBy3j5UW6dM9LSq4");
 
     const formData = {
         name: document.getElementById("name").value,
