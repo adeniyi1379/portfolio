@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    
+}
+#main-area{
+    background-image: url("./img/ales-nesetril-Im7lZjxeLhg-unsplash.jpg");
+    backdrop-filter: blur(8px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+    color: white;
+    padding-left:5em;
+    height: 95vh;
+}
+#main-area .navbar{
+    height: 10vh;
+}
+#main-area .navbar .navbar-brand{
+    color: rgb(197, 153, 182);
+    /* font-size: 45px; */
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+#navbar-img{
+    width: 50px;
+    height: 50px;
+}
+#main-area .nav-link{
+    color: white;
+    font-size: 20px;
+}
+#main-area .nav-link:hover{
+    color: rgb(224, 218, 218);
+    font-size: 20px;
+}
+#main-area .navbar .active{
+    color: white;
+}
+#main-area .btn{
+    background-color: rgb(230, 178, 186,);
+    color: rgb(197, 153, 182);
+    border: 2px solid rgb(197, 153, 182);
+    -webkit-animation: blackWhite 2s infinite ;
+    animation: blackWhite 4s infinite;
+    margin-top: 2em;
+    transition: all;
+
+}
+#main-area .btn:hover{
+    background-color: rgb(230, 178, 186,);
+    color: rgb(197, 153, 182);
+    border: 2px solid white;
+}
+@-webkit-keyframes blackWhite {  
+    0% { border: 2px solid white }
+    50% { border: 3px solid rgb(197, 153, 182) }
+    51% { border: 2px solid white }
+    100% { border: 3px solid rgb(197, 153, 182) }
+  }
+
+@keyframes blackWhite {  
+    0% { border-left: 2px solid white;
+         border-top:2px solid rgb(197, 153, 182)}
+
+    50% { border-top: 2px solid white;
+        border-left:2px solid rgb(197, 153, 182)}
+
+    75% { border-left:2px solid rgb(197, 153, 182);
+        border-top:2px solid rgb(197, 153, 182) ;
+        border-right:2px solid white; }
+
+    100% { border-left:2px solid rgb(197, 153, 182);
+        border-top:2px solid rgb(197, 153, 182) ;
+        border-bottom:2px solid white;
+         border-right: 2px solid rgb(197, 153, 182) }
+  }
+
+#main-area #main-content{
+    align-items: center;
+    height: 70vh;
+}
+
+#main-area img{
+    width: 20em;
+    height: 20em;
+    margin-left: 5em;
+}
+#service{
+    margin-top: 4em;
+}
+#service h2{
+    font-size: 45px;
+}
+#service p{
+    line-height: 2em;
+    padding: 1em ;
+}
+#edu h3{
+    margin-left: 4em;
+    font-weight: bold;
+}
+#edu img{
+    width: 70%;
+    height: 80%;
+    margin-left: 5em;
+}
+#teck-stacks img{
+    width: 30%;
+}
+
+#offer h2{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 45px;
+    font-weight: 700;
+}
+#offer .card{
+    height: 30rem;
+    padding-bottom: 0.5em;
+}
+
+#offer ul{
+    list-style: none;
+}
+#offer ul li {
+    margin-top: 0.3em;
+}
+#offer ul li i{
+    margin-right: 1em;
+}
+form{
+    margin: 1em 5em;
+}
