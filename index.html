@@ -6,7 +6,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="index.css">
+    
     <title>My Portfolio</title>
 </head>
 <body>
@@ -153,28 +155,38 @@
             </div>
         </div>
     </div>
-    <div class="container mt-3" id="contact">
-        <h3>Contact me</h3>
-        <form action="https://formspree.io/mwplkbav" method="post" id="contactForm">
+    <div class="container-fluid mt-3" id="contact">
+        <h2>Get in touch with me</h2>
+        <div class="semi-circle cir-1"></div>
+         <div class="semi-circle cir-2"></div>
+    <!--    <div class="semi-circle cir-3"></div>
+        <div class="semi-circle cir-4"></div> -->
             <div class="row">
-                <div class="col">
-                    <label for="name">Full name</label>
-                    <input type="text" class="form-control" placeholder="Your name" name="email" id="name">
+                <div class="col-md-4 d-flex flex-column justify-content-center offset-md-1" id="contact-social">
+                    <h3>Good to have you</h3>
+                    <p>Let me be your professional for all your data analysis problems and task</p>
+                    <div class="social">
+                        <a href="https://github.com/adeniyi1379/"><img src="./img/github.svg" alt=""></a>
+                        <a href="https://linkedin.com/in/adeniyi-aderonmu"><img src="./img/linked.svg" alt=""></i></a>
+                        <a href="https://x.com/adeniyijustone"><img src="./img/x.svg" alt=""></a>
+                        <a href="mailto:aderonmuadeniyi1379@gmail.com"><img src="./img/mail.svg" alt=""></a>
+                    </div>
                 </div>
-                <div class="col">
-                    <label for="email">Email/Contact</label>
-                    <input type="text" class="form-control" placeholder="Your email" name="email" id="email">
+                <div class="col-md-6">
+                    <form action="https://formspree.io/mwplkbav" method="post" id="contactForm">
+                        <label for="name">Full name</label>
+                        <input type="text" class="form-control" placeholder="Your name" name="email" id="name">
+                        <label for="email">Email/Contact</label>
+                        <input type="text" class="form-control" placeholder="Your email" name="email" id="email">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" class="form-control" placeholder="Your message" rows="10"></textarea>
+                        <button type="submit" class="btn" id="submit">Submit</button>
+                    </form>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" class="form-control" placeholder="Your message" rows="10"></textarea>
-                </div>
-            </div>
-            <button type="submit" class="btn btn-success" id="submit">Submit</button>
+            
 
-        </form>
+       
     </div>
     <!-- <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script> -->
     <script src="./js/index.js"></script>
