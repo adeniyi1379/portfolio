@@ -119,7 +119,7 @@ body{
     width: 30%;
 }
 #offer{
-    margin-bottom: 3em;
+    /* margin-bottom: 3em; */
 }
 #offer h2{
     text-align: center;
@@ -128,8 +128,16 @@ body{
     font-weight: 700;
 }
 #offer .card{
-    height: 30rem;
     padding-bottom: 0.5em;
+}
+.d-grid{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.d-grid .card{
+    height: 100%;
+    min-width: 420px;
 }
 
 #offer ul{
@@ -253,15 +261,32 @@ form input[type = "text"]:focus, form #message:focus{
     #offer .col-md-4{
         margin: 20px;
     }
-    .semi-circle{
+   
+}
+@media screen and (max-width:1300) {
+    .d-grid{
+        grid-template-columns: 2fr;
+        
+    }
+    
+}
+@media screen and (max-width:769px) {
+    .d-grid{
+        grid-template-columns: 1fr;
+        
+    }
+    #main-area img{
+        display: none;
+     }
+     .semi-circle{
         display: none;
     }
+    form, .card{
+        margin: 1em 1.5em;   
+    }
+     
     #contact .col-md-6{
         padding: 20px 10px;
      }
-     form{
-        margin: 1em 1.5em;
-       
-        
-    }
+     
 }
