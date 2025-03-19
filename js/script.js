@@ -1,19 +1,33 @@
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the default form submission
 
-    emailjs.init("lsBy3j5UW6dM9LSq4");
+    const form = event.target;
+    const formData = new FormData(form); // Create FormData object from the form
 
-    const formData = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value
-    };
-
-    emailjs.send("service_mxwvlqz", "template_3tcwosk", formData)
-        .then(response => {
-            alert("Email sent successfully!");
-        })
-        .catch(error => {
-            alert("Failed to send email.", error);
-        });
+    // Send the form data to Formspree using fetch
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            // Show the success popup
+            document.getElementById('successPopup').style.display = 'block';
+            form.reset(); // Reset the form fields
+        } else {
+            alert('There was a problem submitting your form. Please try again.'); // Handle errors
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was a problem submitting your form. Please try again.'); // Handle network errors
+    });
 });
+
+// Function to close the popup
+function closePopup() {
+    document.getElementById('successPopup').style.display = 'none';
+}
