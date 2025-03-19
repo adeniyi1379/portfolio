@@ -248,6 +248,33 @@ form input[type = "text"]:focus, form #message:focus{
 #submit:hover{
     filter: drop-shadow(0px 0px 5px #21efff);
 }
+
+#successPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+#successPopup button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#successPopup button:hover {
+    background: #0056b3;
+}
 @media screen and (max-width:480px) {
     #main-area .col-md-7{
         margin-top: 25%;
