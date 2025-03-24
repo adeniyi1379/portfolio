@@ -10,7 +10,6 @@ body{
     backdrop-filter: blur(8px);
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: blur(8px);
     color: white;
     padding-left:5em;
     height: 95vh;
@@ -311,6 +310,10 @@ form input[type = "text"]:focus, form #message:focus{
     #main-area .col-md-7{
         margin-top: 40%;
         z-index: 99;
+        width: 100%;
+    }
+    #main-area .col-md-5{
+        display:none;
     }
     #main-area img{
         display: none;
