@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    color: #09122C;
     
 }
 #main-area{
@@ -123,17 +124,22 @@ body{
 }
 #offer h2{
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 15px;
     font-size: 45px;
     font-weight: 700;
+}
+#offer>p{
+    text-align: center;
+    margin-bottom: 1em;
 }
 #offer .card{
     padding-bottom: 0.5em;
 }
 .d-grid{
     display: grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(auto-fill, minmax(420px, 1fr));
     grid-gap: 10px;
+    justify-content: center;
 }
 .d-grid .card{
     height: 100%;
@@ -290,10 +296,10 @@ form input[type = "text"]:focus, form #message:focus{
     }
    
 }
-@media screen and (max-width:1300) {
+@media screen and (max-width:1260) {
     .d-grid{
-        grid-template-columns: 2fr;
-        
+        /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+        /* justify-content: center; */
     }
     
 }
@@ -301,6 +307,10 @@ form input[type = "text"]:focus, form #message:focus{
     .d-grid{
         grid-template-columns: 1fr;
         
+    }
+    #main-area .col-md-7{
+        margin-top: 40%;
+        z-index: 99;
     }
     #main-area img{
         display: none;
