@@ -302,18 +302,11 @@ form input[type = "text"]:focus, form #message:focus{
     }
    
 }
-@media screen and (max-width:1260) {
-    .d-grid{
-        /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
-        /* justify-content: center; */
-    }
-    
-}
 @media screen and (max-width:769px) {
     .d-grid{
         grid-template-columns: 1fr;
         grid-gap: 10px;
-        padding: ;
+        padding:10px 0px;
         
     }
     #main-area .col-md-7{
